@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
             {/* Social Links Arranged Vertically (Desktop) / Horizontally (Mobile) */}
             <div className="pt-2">
               <span className="text-[10px] font-mono uppercase tracking-widest text-linen-500 dark:text-linen-400 block mb-3">
-                Verified Profiles
+                Social Profiles
               </span>
               <div className="flex flex-wrap lg:flex-col items-center justify-center lg:items-start gap-2.5">
                 <a

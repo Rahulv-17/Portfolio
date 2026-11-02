@@ -142,7 +142,7 @@ export const ContactSection: React.FC = () => {
                       </div>
                       <div>
                         <div className="text-[10px] font-mono uppercase tracking-wider text-linen-200">
-                          Verified CV
+                          PDF Document
                         </div>
                         <div className="font-sans font-semibold text-sm">
                           Download Resume

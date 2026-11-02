@@ -223,7 +223,7 @@ export const TIMELINE: ExperienceItem[] = [
     description: 'Solved 150+ DSA problems across LeetCode and GeeksforGeeks spanning Dynamic Programming, Graphs, Trees, and System Design patterns.',
     type: 'achievement',
     tags: ['150+ Problems', 'LeetCode', 'GeeksforGeeks', 'Data Structures & Algorithms'],
-    highlight: '150+ Verified Algorithmic Solutions',
+    highlight: '150+ Algorithmic Solutions',
   },
 ];
 
