@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
         >
           <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full border border-linen-300/80 dark:border-linen-800 bg-white/80 dark:bg-obsidian-900/80 backdrop-blur-md shadow-sm text-[10px] sm:text-xs font-sans text-linen-800 dark:text-linen-200 max-w-[92vw]">
             {/* Laurel Wreath Icon */}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-lime-700 dark:text-lime-400 shrink-0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-terracotta-600 dark:text-terracotta-400 shrink-0">
               <path d="M7 19C4 16 3 12 4 8M17 19C20 16 21 12 20 8M12 4V20" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
               <circle cx="12" cy="7" r="1.5" fill="currentColor"/>
             </svg>
@@ -53,18 +53,18 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* ─── CENTERSTAGE: Layered Portrait with 3D Overlap & Floating Accents ─── */}
-        <div className="relative z-20 -mt-6 sm:-mt-10 md:-mt-14 lg:-mt-16 xl:-mt-18">
-          {/* Portrait Container: Compact on desktop to eliminate extra scrolling while keeping mobile intact */}
+        <div className="relative z-20 -mt-6 sm:-mt-10 md:-mt-14 lg:-mt-16 xl:-mt-20">
+          {/* Portrait Container: Balanced Medium scale on desktop */}
           <motion.div
             initial={{ opacity: 0.9, scale: 0.98, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-[220px] sm:max-w-[290px] md:max-w-[340px] lg:max-w-[270px] xl:max-w-[300px] mx-auto"
+            className="relative w-full max-w-[220px] sm:max-w-[290px] md:max-w-[340px] lg:max-w-[325px] xl:max-w-[355px] mx-auto"
           >
             <img
               src="/assets/me_transparent.png"
               alt="Vaddi Rahul — Full Stack Developer"
-              className="w-full h-auto max-h-[460px] lg:max-h-[350px] xl:max-h-[380px] object-contain mx-auto drop-shadow-2xl"
+              className="w-full h-auto max-h-[460px] lg:max-h-[390px] xl:max-h-[425px] object-contain mx-auto drop-shadow-2xl"
               style={{
                 maskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
                 WebkitMaskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
               <div className="w-8 h-8 rounded-full bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
                 AI
               </div>
-              <div className="w-8 h-8 rounded-full bg-lime-600 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
+              <div className="w-8 h-8 rounded-full bg-sand-400 text-linen-950 text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
                 FS
               </div>
               <div className="w-8 h-8 rounded-full bg-terracotta-600 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
