@@ -170,29 +170,6 @@ export const Hero: React.FC = () => {
             </p>
           </motion.div>
 
-          {/* Bottom Left: Trust / Specialization Proof */}
-          <motion.div
-            initial={{ opacity: 0.85, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25 }}
-            className="hidden lg:flex items-center gap-3 absolute left-4 xl:left-12 bottom-0 z-30 max-w-[320px]"
-          >
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
-                AI
-              </div>
-              <div className="w-8 h-8 rounded-full bg-sand-400 text-linen-950 text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
-                FS
-              </div>
-              <div className="w-8 h-8 rounded-full bg-terracotta-600 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
-                VR
-              </div>
-            </div>
-            <p className="text-xs font-sans text-linen-600 dark:text-linen-400 leading-snug">
-              Specializing in AI &amp; Full-Stack systems at <span className="text-linen-950 dark:text-linen-100 font-semibold">IIIT Kottayam</span>.
-            </p>
-          </motion.div>
-
           {/* Bottom Right: High-Contrast Obsidian Pill CTA */}
           <motion.div
             initial={{ opacity: 0.85, y: 10 }}

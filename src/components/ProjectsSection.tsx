@@ -12,7 +12,7 @@ export const ProjectsSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="mb-16">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta-500/10 text-terracotta-700 dark:text-terracotta-300 text-xs font-mono uppercase tracking-widest font-semibold mb-3">
               <Sparkles size={13} className="text-terracotta-500" />
@@ -22,9 +22,6 @@ export const ProjectsSection: React.FC = () => {
               Featured <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">Engineering</span> Systems &amp; AI Platforms.
             </h2>
           </div>
-          <p className="text-sm text-linen-700 dark:text-linen-300 max-w-md font-sans leading-relaxed">
-            Real-world full-stack platforms engineered from scratch, featuring multi-agent AI orchestration, AST dependency graph generation, and real-time distributed state.
-          </p>
         </div>
 
         {/* Featured Projects Grid */}
