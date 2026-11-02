@@ -64,9 +64,9 @@ export const ContactSection: React.FC = () => {
                   <Sparkles size={13} className="text-terracotta-500" />
                   <span>Start a Conversation</span>
                 </div>
-                <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-linen-950 dark:text-linen-50 tracking-tight leading-[1.05]">
+                <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-linen-950 dark:text-linen-50 tracking-tight leading-[1.05]">
                   Let's Make <br />
-                  <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">
+                  <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">
                     It Happen.
                   </span>
                 </h2>

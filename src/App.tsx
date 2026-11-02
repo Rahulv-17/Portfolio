@@ -53,7 +53,7 @@ export const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-linen-100 dark:bg-obsidian-950 text-linen-950 dark:text-linen-100 selection:bg-terracotta-500 selection:text-white transition-colors duration-300 relative bg-noise">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-linen-100 dark:bg-obsidian-950 text-linen-950 dark:text-linen-100 selection:bg-terracotta-500 selection:text-white transition-colors duration-300 relative bg-noise">
       {/* Navbar */}
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 

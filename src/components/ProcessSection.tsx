@@ -16,8 +16,8 @@ export const ProcessSection: React.FC = () => {
               <Sparkles size={13} className="text-terracotta-500" />
               <span>Engineering Methodology</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
-              How I Engineer <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">Reliable</span> Production Systems.
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
+              How I Engineer <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">Reliable</span> Production Systems.
             </h2>
           </div>
           <p className="text-sm text-linen-700 dark:text-linen-300 max-w-md font-sans leading-relaxed">

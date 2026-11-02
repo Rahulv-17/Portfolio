@@ -1,172 +1,191 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
-import { PERSONAL_INFO } from '../data/portfolioData';
+import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden flex flex-col justify-between">
-      {/* Ambient Lighting Gradients derived from Rahul's Photograph */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[900px] md:h-[900px] bg-gradient-to-b from-terracotta-400/20 via-terracotta-600/10 to-transparent rounded-full blur-[120px] pointer-events-none -z-10" />
-      <div className="absolute top-1/3 left-1/4 w-[350px] h-[350px] bg-sand-300/25 dark:bg-terracotta-900/20 rounded-full blur-[100px] pointer-events-none -z-10" />
-      <div className="absolute top-1/3 right-1/4 w-[350px] h-[350px] bg-terracotta-500/15 rounded-full blur-[100px] pointer-events-none -z-10" />
+    <section className="relative isolate min-h-[92vh] sm:min-h-screen pt-24 pb-8 sm:pt-28 sm:pb-12 overflow-hidden flex flex-col justify-between">
+      {/* ─── VIBRANT AMBIENT LIME AURA GLOW (Faithful to Editorial Reference) ─── */}
+      <div className="hero-aura-glow absolute top-[44%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[700px] lg:w-[1200px] h-[340px] sm:h-[600px] lg:h-[880px] blur-[30px] sm:blur-[55px] pointer-events-none z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full relative z-10 my-auto">
-        {/* Hero Main Grid: Left Column, Center Portrait, Right Column */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* ─── LEFT COLUMN: Greeting, Name, Socials, Stat ─── */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-3 flex flex-col justify-between order-1 lg:order-1 text-center lg:text-left space-y-6"
-          >
-            <div>
-              <span className="text-xs font-mono tracking-widest uppercase text-terracotta-600 dark:text-terracotta-400 font-semibold flex items-center justify-center lg:justify-start gap-2 mb-2">
-                <span className="w-6 h-[1.5px] bg-terracotta-500 inline-block" />
-                Hello, I am
-              </span>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-linen-950 dark:text-linen-50 leading-[1.05]">
-                VADDI <br />
-                <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">
-                  RAHUL
-                </span>
-              </h1>
-              <p className="mt-3 text-xs font-mono text-linen-600 dark:text-linen-400 uppercase tracking-wider">
-                Full-Stack &amp; AI Engineer
-              </p>
-            </div>
-
-            {/* Social Links Arranged Vertically (Desktop) / Horizontally (Mobile) */}
-            <div className="pt-2">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-linen-500 dark:text-linen-400 block mb-3">
-                Social Profiles
-              </span>
-              <div className="flex flex-wrap lg:flex-col items-center justify-center lg:items-start gap-2.5">
-                <a
-                  href={PERSONAL_INFO.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2.5 px-3 py-2 rounded-xl glass-pill hover:bg-terracotta-500/10 hover:border-terracotta-500/40 transition-all text-linen-800 dark:text-linen-200 text-xs font-medium"
-                >
-                  <div className="p-1.5 rounded-lg bg-linen-200 dark:bg-linen-800 group-hover:bg-terracotta-500 group-hover:text-white transition-colors">
-                    <Github size={14} />
-                  </div>
-                  <span>github.com/Rahulv-17</span>
-                </a>
-
-                <a
-                  href={PERSONAL_INFO.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2.5 px-3 py-2 rounded-xl glass-pill hover:bg-terracotta-500/10 hover:border-terracotta-500/40 transition-all text-linen-800 dark:text-linen-200 text-xs font-medium"
-                >
-                  <div className="p-1.5 rounded-lg bg-linen-200 dark:bg-linen-800 group-hover:bg-terracotta-500 group-hover:text-white transition-colors">
-                    <Linkedin size={14} />
-                  </div>
-                  <span>linkedin.com/in/rahulvaddi</span>
-                </a>
-
-                <a
-                  href={`mailto:${PERSONAL_INFO.email}`}
-                  className="group flex items-center gap-2.5 px-3 py-2 rounded-xl glass-pill hover:bg-terracotta-500/10 hover:border-terracotta-500/40 transition-all text-linen-800 dark:text-linen-200 text-xs font-medium"
-                >
-                  <div className="p-1.5 rounded-lg bg-linen-200 dark:bg-linen-800 group-hover:bg-terracotta-500 group-hover:text-white transition-colors">
-                    <Mail size={14} />
-                  </div>
-                  <span>vaddirahul3003@gmail.com</span>
-                </a>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* ─── CENTER COLUMN: Real Portrait + Ambient Glowing Arch ─── */}
-          <div className="lg:col-span-6 flex flex-col items-center justify-center order-2 lg:order-2 relative">
-            {/* Glowing Arch & Portrait Container */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.92, y: 30 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-[340px] sm:max-w-[420px] lg:max-w-[460px] mx-auto"
-            >
-              {/* Arched Background with Photograph-Derived Warm Lighting */}
-              <div className="relative mx-auto rounded-t-full rounded-b-3xl overflow-hidden pt-8 px-4 bg-gradient-to-b from-terracotta-200/50 via-linen-200/40 to-linen-100 dark:from-terracotta-900/40 dark:via-obsidian-900/80 dark:to-obsidian-950 border border-terracotta-400/30 dark:border-terracotta-500/20 shadow-warm-lg">
-                {/* Internal Glow Behind Head */}
-                <div className="absolute top-12 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full bg-gradient-to-br from-terracotta-400/40 to-terracotta-600/30 blur-2xl pointer-events-none" />
-
-                {/* Actual Personal Photograph */}
-                <motion.div
-                  animate={{ y: [-3, 3, -3] }}
-                  transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-                  className="relative z-10"
-                >
-                  <img
-                    src="/assets/me_transparent.png"
-                    alt="Vaddi Rahul — Full-Stack & AI Systems Developer"
-                    className="w-full h-auto max-h-[520px] object-contain mx-auto drop-shadow-2xl"
-                    loading="eager"
-                  />
-                </motion.div>
-
-                {/* Smooth Fade at Bottom of Photograph */}
-                <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-linen-100 dark:from-obsidian-950 via-linen-100/70 dark:via-obsidian-950/70 to-transparent pointer-events-none z-20" />
-              </div>
-            </motion.div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full relative z-10 flex-1 flex flex-col justify-center">
+        {/* ─── TOP ACCOLADE BADGE (Google Website of the Day style) ─── */}
+        <motion.div
+          initial={{ opacity: 0.85, y: -6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="flex items-center justify-center gap-2 mb-2 sm:mb-3"
+        >
+          <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 rounded-full border border-linen-300/80 dark:border-linen-800 bg-white/80 dark:bg-obsidian-900/80 backdrop-blur-md shadow-sm text-[10px] sm:text-xs font-sans text-linen-800 dark:text-linen-200 max-w-[92vw]">
+            {/* Laurel Wreath Icon */}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-lime-700 dark:text-lime-400 shrink-0">
+              <path d="M7 19C4 16 3 12 4 8M17 19C20 16 21 12 20 8M12 4V20" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="12" cy="7" r="1.5" fill="currentColor"/>
+            </svg>
+            <span className="font-semibold tracking-wide text-linen-900 dark:text-linen-100 whitespace-nowrap">IIIT Kottayam</span>
+            <span className="text-linen-400 dark:text-linen-600">·</span>
+            <span className="text-linen-700 dark:text-linen-300 font-medium hidden sm:inline">B.Tech CSE (AI &amp; Data Science)</span>
+            <span className="text-linen-700 dark:text-linen-300 font-medium sm:hidden">CSE (AI &amp; DS)</span>
           </div>
+        </motion.div>
 
-          {/* ─── RIGHT COLUMN: Professional Headline, Bio, CTAs ─── */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="lg:col-span-3 flex flex-col justify-between order-3 lg:order-3 text-center lg:text-left space-y-6"
+        {/* ─── MAIN HERO HEADLINE: Dual Typography Pairing ─── */}
+        <div className="text-center relative z-10 px-2 sm:px-4 select-none">
+          {/* Line 1: Bold Modern Geometric Sans */}
+          <motion.h1
+            initial={{ opacity: 0.85, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            className="font-display font-extrabold text-3xl sm:text-6xl md:text-7xl lg:text-[5.2rem] xl:text-[6rem] tracking-tight text-linen-950 dark:text-linen-50 leading-[1.05]"
           >
-            <div>
-              <div className="inline-block px-3 py-1 rounded-full bg-terracotta-500/10 text-terracotta-700 dark:text-terracotta-300 text-[11px] font-mono uppercase tracking-wider font-semibold mb-3">
-                Focus &amp; Specialization
-              </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-linen-950 dark:text-linen-50 leading-snug">
-                Engineering <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">Intelligent</span> Multi-Agent Workflows &amp; Real-Time Web.
-              </h2>
-            </div>
+            Hi I'm Rahul
+          </motion.h1>
 
-            <p className="text-sm text-linen-700 dark:text-linen-300 leading-relaxed font-sans">
-              Computer Science undergraduate at <strong className="text-linen-950 dark:text-linen-100 font-semibold">IIIT Kottayam</strong> specializing in AI &amp; Data Science. Proven track record deploying multi-agent swarms (Mastra, Gemini), low-latency backends (Hono, FastAPI), and dynamic frontends.
-            </p>
-
-            {/* Core Competency Tags */}
-            <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start">
-              {['Multi-Agent Systems', 'FastAPI & Hono', 'React / Next.js', 'Redis Caching', 'Gemini AI API', 'Socket.IO'].map((tech) => (
-                <span
-                  key={tech}
-                  className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-medium bg-linen-200/80 dark:bg-linen-900/80 text-linen-800 dark:text-linen-200 border border-linen-300/60 dark:border-linen-800"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <div className="pt-2 flex justify-center">
-              <a
-                href="#projects"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-terracotta-600 hover:bg-terracotta-500 text-white font-semibold text-xs tracking-wider uppercase shadow-glow transition-all duration-200 hover:-translate-y-0.5 text-center"
-              >
-                Explore Projects
-              </a>
-            </div>
+          {/* Line 2: Editorial Display Italic Serif */}
+          <motion.div
+            initial={{ opacity: 0.85, y: 6 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="font-editorial italic font-normal text-2xl sm:text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6.8rem] tracking-tight text-linen-950 dark:text-linen-100 leading-[0.95] mt-0.5 sm:mt-1 whitespace-normal sm:whitespace-nowrap"
+          >
+            Full Stack Developer
           </motion.div>
         </div>
 
-        {/* Scroll Indicator at bottom */}
-        <div className="pt-12 md:pt-16 flex justify-center">
+        {/* ─── CENTERSTAGE: Layered Portrait with 3D Overlap & Floating Accents ─── */}
+        <div className="relative z-20 -mt-6 sm:-mt-10 md:-mt-14 lg:-mt-20">
+          {/* Portrait Container */}
+          <motion.div
+            initial={{ opacity: 0.9, scale: 0.98, y: 10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            className="relative w-full max-w-[220px] sm:max-w-[290px] md:max-w-[340px] lg:max-w-[390px] xl:max-w-[430px] mx-auto"
+          >
+            <img
+              src="/assets/me_transparent.png"
+              alt="Vaddi Rahul — Full Stack Developer"
+              className="w-full h-auto object-contain mx-auto drop-shadow-2xl"
+              style={{
+                maskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
+              }}
+              loading="eager"
+            />
+          </motion.div>
+
+          {/* ─── DESKTOP FLOATING SATELLITES (Exact Reference Composition) ─── */}
+          {/* Middle Left: Status Pill */}
+          <motion.div
+            initial={{ opacity: 0.85, x: -15 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="hidden lg:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/95 dark:bg-obsidian-900/95 backdrop-blur-md shadow-warm border border-linen-300/80 dark:border-linen-700/60 absolute left-4 xl:left-12 top-[46%] -translate-y-1/2 z-30 hover:scale-105 transition-transform"
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-lime-500" />
+            </span>
+            <span className="text-xs xl:text-sm font-sans font-medium text-linen-900 dark:text-linen-100 whitespace-nowrap">
+              Available for now opportunities
+            </span>
+          </motion.div>
+
+          {/* Middle Right: Bio Text Blurb */}
+          <motion.div
+            initial={{ opacity: 0.85, x: 15 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.22 }}
+            className="hidden lg:block absolute right-4 xl:right-12 top-[46%] -translate-y-1/2 max-w-[240px] xl:max-w-[280px] text-left z-30"
+          >
+            <p className="text-sm xl:text-base font-sans text-linen-800 dark:text-linen-200 leading-relaxed font-normal">
+              passionate about creating intuitive digital experiences that connect users with value.
+            </p>
+          </motion.div>
+
+          {/* Bottom Left: Trust / Specialization Proof */}
+          <motion.div
+            initial={{ opacity: 0.85, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="hidden lg:flex items-center gap-3 absolute left-4 xl:left-12 bottom-1 z-30 max-w-[320px]"
+          >
+            <div className="flex -space-x-2">
+              <div className="w-8 h-8 rounded-full bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
+                AI
+              </div>
+              <div className="w-8 h-8 rounded-full bg-lime-600 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
+                FS
+              </div>
+              <div className="w-8 h-8 rounded-full bg-terracotta-600 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
+                VR
+              </div>
+            </div>
+            <p className="text-xs font-sans text-linen-600 dark:text-linen-400 leading-snug">
+              Specializing in AI &amp; Full-Stack systems at <span className="text-linen-950 dark:text-linen-100 font-semibold">IIIT Kottayam</span>.
+            </p>
+          </motion.div>
+
+          {/* Bottom Right: High-Contrast Obsidian Pill CTA */}
+          <motion.div
+            initial={{ opacity: 0.85, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.28 }}
+            className="hidden lg:flex items-center gap-3 absolute right-4 xl:right-12 bottom-1 z-30"
+          >
+            <a
+              href="#contact"
+              className="group flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-neutral-900 hover:bg-black dark:bg-white dark:hover:bg-linen-100 text-white dark:text-neutral-900 font-sans font-medium text-sm transition-all duration-300 shadow-warm-lg hover:scale-105"
+            >
+              <span className="text-base group-hover:translate-x-1 transition-transform">→</span>
+              <span>Get in Touch</span>
+            </a>
+          </motion.div>
+        </div>
+
+        {/* ─── MOBILE / TABLET CONTENT FLOW ─── */}
+        <div className="lg:hidden flex flex-col items-center gap-3 mt-1 px-4 text-center z-30 relative">
+          {/* Status Pill */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 dark:bg-obsidian-900/90 shadow-warm border border-linen-300/80 dark:border-linen-700/60">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500" />
+            </span>
+            <span className="text-xs font-sans font-medium text-linen-900 dark:text-linen-100">
+              Available for now opportunities
+            </span>
+          </div>
+
+          {/* Bio text */}
+          <p className="text-xs sm:text-sm font-sans text-linen-700 dark:text-linen-300 max-w-[280px] sm:max-w-sm leading-relaxed px-2">
+            passionate about creating intuitive digital experiences that connect users with value.
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 pt-1 w-full max-w-[280px]">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-sans font-medium text-xs tracking-wider uppercase shadow-warm hover:scale-105 transition-all text-center"
+            >
+              → Get in Touch
+            </a>
+            <a
+              href="#projects"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-full border border-linen-300 dark:border-linen-700 glass-pill text-linen-900 dark:text-linen-100 font-sans font-medium text-xs tracking-wider uppercase hover:bg-terracotta-500/10 transition-all text-center"
+            >
+              Explore Projects
+            </a>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="pt-3 sm:pt-4 flex justify-center">
           <a
             href="#about"
-            className="group flex flex-col items-center gap-2 text-xs font-mono text-linen-500 dark:text-linen-400 hover:text-terracotta-600 dark:hover:text-terracotta-400 transition-colors"
+            className="group flex flex-col items-center gap-1 text-[11px] font-mono text-linen-500 dark:text-linen-400 hover:text-terracotta-600 dark:hover:text-terracotta-400 transition-colors"
           >
             <span>SCROLL TO DISCOVER</span>
-            <div className="w-8 h-8 rounded-full border border-linen-300 dark:border-linen-700 flex items-center justify-center group-hover:border-terracotta-500 transition-colors">
-              <ArrowDown size={14} className="animate-bounce text-terracotta-500" />
+            <div className="w-5 h-5 rounded-full border border-linen-300 dark:border-linen-700 flex items-center justify-center group-hover:border-terracotta-500 transition-colors">
+              <ArrowDown size={11} className="animate-bounce text-terracotta-500" />
             </div>
           </a>
         </div>

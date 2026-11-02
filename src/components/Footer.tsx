@@ -53,8 +53,8 @@ export const Footer: React.FC = () => {
 
         {/* Grand Oversized Typography Banner */}
         <div className="py-12 sm:py-16 text-center select-none overflow-hidden">
-          <div className="font-serif font-black text-[12vw] sm:text-[11vw] tracking-tighter leading-none text-linen-900/10 dark:text-linen-100/10 hover:text-terracotta-600/20 dark:hover:text-terracotta-400/20 transition-colors duration-500 whitespace-nowrap">
-            VADDI RAHUL
+          <div className="font-editorial italic font-normal text-[14vw] sm:text-[12vw] tracking-tight leading-none text-linen-900/10 dark:text-linen-100/10 hover:text-terracotta-600/20 dark:hover:text-terracotta-400/20 transition-colors duration-500 whitespace-nowrap">
+            Rahul Vaddi
           </div>
         </div>
 

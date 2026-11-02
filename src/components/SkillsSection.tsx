@@ -25,8 +25,8 @@ export const SkillsSection: React.FC = () => {
             <Sparkles size={13} className="text-terracotta-500" />
             <span>Technical Capabilities</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
-            Modern Tech Stack &amp; <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">Core CS</span> Foundations.
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
+            Modern Tech Stack &amp; <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">Core CS</span> Foundations.
           </h2>
           <p className="mt-4 text-sm sm:text-base text-linen-700 dark:text-linen-300 leading-relaxed font-sans">
             A comprehensive overview of the languages, frameworks, AI libraries, distributed data stores, and foundational computer science principles I leverage to build production applications.

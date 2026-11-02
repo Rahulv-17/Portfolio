@@ -32,13 +32,21 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 ${
-          scrolled ? 'py-3' : 'py-5'
+        className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? 'py-3' : 'py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto relative flex items-center justify-center min-h-[44px]">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between min-h-[44px] relative">
+          {/* Brand Signature in Editorial Italic Serif */}
+          <a
+            href="#"
+            className="font-editorial italic text-2xl sm:text-3xl font-normal text-linen-950 dark:text-linen-50 hover:text-terracotta-600 dark:hover:text-terracotta-400 transition-colors tracking-tight select-none"
+          >
+            Rahul Vaddi
+          </a>
+
           {/* Centered Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 glass-pill px-4 py-1.5 rounded-full shadow-warm border border-linen-300/80 dark:border-terracotta-500/20">
+          <nav className="hidden md:flex items-center gap-1 glass-pill px-4 py-1.5 rounded-full shadow-warm border border-linen-300/80 dark:border-terracotta-500/20 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -50,45 +58,36 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode }) => {
             ))}
           </nav>
 
-          {/* Action CTAs & Controls Pinned to Right */}
-          <div className="hidden lg:flex items-center gap-3 absolute right-0">
+          {/* Action CTAs & Controls (Desktop & Mobile) */}
+          <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Dark / Light Mode Switch */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full glass-pill hover:bg-terracotta-500/10 text-linen-800 dark:text-linen-200 transition-all duration-200 border border-linen-300/70 dark:border-terracotta-500/30"
+              className="p-1.5 sm:p-2 rounded-full glass-pill hover:bg-terracotta-500/10 text-linen-800 dark:text-linen-200 transition-all duration-200 border border-linen-300/70 dark:border-terracotta-500/30"
               aria-label="Toggle theme"
               title={darkMode ? "Switch to Editorial Linen" : "Switch to Obsidian Night"}
             >
-              {darkMode ? <Sun size={17} className="text-terracotta-400" /> : <Moon size={17} className="text-linen-800" />}
+              {darkMode ? <Sun size={16} className="text-terracotta-400" /> : <Moon size={16} className="text-linen-800" />}
             </button>
 
-            {/* Resume Button */}
+            {/* Resume Button (Desktop) */}
             <a
               href={PERSONAL_INFO.resumeUrl}
               download="Vaddi_Rahul_Resume.pdf"
-              className="group flex items-center gap-1.5 px-4 py-2 rounded-full bg-terracotta-600 hover:bg-terracotta-500 text-white text-xs font-semibold tracking-wider uppercase shadow-glow-subtle transition-all duration-200 hover:shadow-glow hover:-translate-y-0.5"
+              className="hidden lg:flex group items-center gap-1.5 px-4 py-2 rounded-full bg-terracotta-600 hover:bg-terracotta-500 text-white text-xs font-semibold tracking-wider uppercase shadow-glow-subtle transition-all duration-200 hover:shadow-glow hover:-translate-y-0.5"
             >
               <FileText size={14} />
               <span>Resume</span>
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
-          </div>
 
-          {/* Mobile Menu Button Pinned to Right */}
-          <div className="flex items-center gap-2 md:hidden absolute right-0">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full glass-pill text-linen-800 dark:text-linen-200"
-              aria-label="Toggle theme"
-            >
-              {darkMode ? <Sun size={16} className="text-terracotta-400" /> : <Moon size={16} />}
-            </button>
+            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl glass-pill text-linen-900 dark:text-linen-100 focus:outline-none"
+              className="p-1.5 sm:p-2 rounded-full glass-pill text-linen-900 dark:text-linen-100 md:hidden border border-linen-300/80 dark:border-linen-700/60"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+              {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>

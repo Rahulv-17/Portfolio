@@ -34,8 +34,8 @@ export const ExperienceEducation: React.FC = () => {
               <Sparkles size={13} className="text-terracotta-500" />
               <span>Career &amp; Academic Timeline</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
-              Experience, <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">Education</span> &amp; Key Milestones.
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-linen-950 dark:text-linen-50 tracking-tight leading-[1.15]">
+              Experience, <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">Education</span> &amp; Key Milestones.
             </h2>
           </div>
 

@@ -39,8 +39,8 @@ export const AboutSection: React.FC = () => {
             <Sparkles size={13} className="text-terracotta-500" />
             <span>Philosophy &amp; Engineering Focus</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-linen-950 dark:text-linen-50 leading-[1.15] tracking-tight">
-            Blending <span className="italic font-normal text-terracotta-600 dark:text-terracotta-400">Deterministic AI</span> with High-Throughput Distributed Architecture.
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-linen-950 dark:text-linen-50 leading-[1.15] tracking-tight">
+            Blending <span className="font-editorial italic font-normal text-terracotta-600 dark:text-terracotta-400">Deterministic AI</span> with High-Throughput Distributed Architecture.
           </h2>
           <p className="mt-6 text-base sm:text-lg text-linen-700 dark:text-linen-300 leading-relaxed font-sans">
             I am a Computer Science undergraduate at <strong className="text-linen-950 dark:text-linen-50 font-semibold">Indian Institute of Information Technology, Kottayam</strong> specializing in AI &amp; Data Science. My work revolves around turning complex stochastic models and distributed protocols into dependable, delightful production software.

@@ -46,10 +46,16 @@ export default {
         obsidian: {
           900: '#141211',
           950: '#0c0b0a',
-        }
+        },
+        aura: {
+          lime: '#bbf746',
+          glow: '#d4fc79',
+          light: '#eefcce',
+        },
       },
       fontFamily: {
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        editorial: ['"Instrument Serif"', '"Playfair Display"', 'Georgia', 'serif'],
         display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
@@ -86,4 +92,3 @@ export default {
   },
   plugins: [],
 }
-
