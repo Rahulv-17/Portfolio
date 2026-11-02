@@ -72,46 +72,70 @@ export const Hero: React.FC = () => {
               loading="eager"
             />
 
-            {/* Hand-drawn Dotted Loop Arrow: Pointing from portrait to Left Status Pill */}
-            <div className="hidden lg:block absolute -left-28 xl:-left-36 top-[42%] -translate-y-1/2 w-28 xl:w-36 h-20 text-terracotta-500/80 dark:text-terracotta-400/80 pointer-events-none z-20">
-              <svg viewBox="0 0 140 70" className="w-full h-full overflow-visible" fill="none">
-                {/* Dotted looping path */}
+            {/* Refined Dotted Arrow: Pointing from portrait to Left Status Pill */}
+            <div className="hidden lg:block absolute -left-20 xl:-left-28 top-[44%] -translate-y-1/2 w-16 xl:w-24 h-10 text-terracotta-500/80 dark:text-terracotta-400/80 pointer-events-none z-20">
+              <svg viewBox="0 0 100 40" className="w-full h-full overflow-visible" fill="none">
+                <defs>
+                  <marker
+                    id="hero-arrow-left"
+                    viewBox="0 0 10 10"
+                    refX="2"
+                    refY="5"
+                    markerWidth="5"
+                    markerHeight="5"
+                    orient="auto"
+                  >
+                    <path
+                      d="M 2 2 L 8 5 L 2 8"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                    />
+                  </marker>
+                </defs>
                 <path
-                  d="M 135,48 C 110,42 98,18 84,14 C 68,10 64,32 76,36 C 88,40 94,22 82,16 C 60,6 32,20 12,32"
+                  d="M 92,30 Q 50,6 12,24"
                   stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeDasharray="4 4"
+                  strokeWidth="1.75"
                   strokeLinecap="round"
-                />
-                {/* Arrowhead pointing to status pill */}
-                <path
-                  d="M 21,24 L 10,33 L 21,39"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeDasharray="0.1 5.5"
+                  markerEnd="url(#hero-arrow-left)"
                 />
               </svg>
             </div>
 
-            {/* Hand-drawn Dotted Loop Arrow: Pointing from portrait to Right Bio Text */}
-            <div className="hidden lg:block absolute -right-28 xl:-right-36 top-[42%] -translate-y-1/2 w-28 xl:w-36 h-20 text-terracotta-500/80 dark:text-terracotta-400/80 pointer-events-none z-20">
-              <svg viewBox="0 0 140 70" className="w-full h-full overflow-visible" fill="none">
-                {/* Dotted looping path */}
+            {/* Refined Dotted Arrow: Pointing from portrait to Right Bio Text */}
+            <div className="hidden lg:block absolute -right-20 xl:-right-28 top-[44%] -translate-y-1/2 w-16 xl:w-24 h-10 text-terracotta-500/80 dark:text-terracotta-400/80 pointer-events-none z-20">
+              <svg viewBox="0 0 100 40" className="w-full h-full overflow-visible" fill="none">
+                <defs>
+                  <marker
+                    id="hero-arrow-right"
+                    viewBox="0 0 10 10"
+                    refX="2"
+                    refY="5"
+                    markerWidth="5"
+                    markerHeight="5"
+                    orient="auto"
+                  >
+                    <path
+                      d="M 2 2 L 8 5 L 2 8"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                    />
+                  </marker>
+                </defs>
                 <path
-                  d="M 8,48 C 32,42 44,18 58,14 C 74,10 78,32 66,36 C 54,40 48,22 60,16 C 82,6 110,20 130,32"
+                  d="M 8,30 Q 50,6 88,24"
                   stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeDasharray="4 4"
+                  strokeWidth="1.75"
                   strokeLinecap="round"
-                />
-                {/* Arrowhead pointing to bio text */}
-                <path
-                  d="M 121,24 L 132,33 L 121,39"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                  strokeDasharray="0.1 5.5"
+                  markerEnd="url(#hero-arrow-right)"
                 />
               </svg>
             </div>
