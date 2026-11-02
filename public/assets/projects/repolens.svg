@@ -1,0 +1,77 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" rx="24" fill="#14151C"/>
+  <circle cx="300" cy="220" r="280" fill="#4E7297" fill-opacity="0.18"/>
+  <circle cx="900" cy="500" r="320" fill="#D97736" fill-opacity="0.15"/>
+  
+  <rect x="60" y="50" width="1080" height="650" rx="18" fill="#1B1D27" stroke="#2A2E3D" stroke-width="1.5"/>
+  <rect x="60" y="50" width="1080" height="52" rx="18" fill="#222533"/>
+  <circle cx="96" cy="76" r="6" fill="#FF5F56"/>
+  <circle cx="116" cy="76" r="6" fill="#FFBD2E"/>
+  <circle cx="136" cy="76" r="6" fill="#27C93F"/>
+  <text x="600" y="82" fill="#A4ADC4" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">RepoLens AI • Repository Architecture &amp; Code Intelligence Engine</text>
+  <rect x="990" y="66" width="120" height="22" rx="6" fill="#4A88E8" fill-opacity="0.2"/>
+  <text x="1050" y="81" fill="#82B1FF" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle">GEMINI PRO CHAT</text>
+
+  <rect x="90" y="130" width="570" height="530" rx="14" fill="#1E212D" stroke="#2B3041"/>
+  <text x="115" y="165" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Dependency Graph &amp; Call Hierarchy</text>
+  <text x="115" y="188" fill="#7A849E" font-family="system-ui, sans-serif" font-size="12">Automated AST Parsing &amp; Topological File Ranking</text>
+
+  <line x1="220" y1="270" x2="360" y2="230" stroke="#D97736" stroke-width="2" stroke-dasharray="4 4"/>
+  <line x1="360" y1="230" x2="520" y2="300" stroke="#5C8DF6" stroke-width="2"/>
+  <line x1="220" y1="270" x2="280" y2="410" stroke="#7E57C2" stroke-width="2"/>
+  <line x1="280" y1="410" x2="440" y2="430" stroke="#5C8DF6" stroke-width="2"/>
+  <line x1="440" y1="430" x2="520" y2="300" stroke="#26A69A" stroke-width="2"/>
+  
+  <rect x="170" y="240" width="100" height="60" rx="8" fill="#2A2E3E" stroke="#D97736" stroke-width="2"/>
+  <text x="220" y="270" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">index.ts</text>
+  <text x="220" y="286" fill="#E5A374" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">Rank #1</text>
+
+  <rect x="310" y="200" width="100" height="60" rx="8" fill="#2A2E3E" stroke="#5C8DF6" stroke-width="1.5"/>
+  <text x="360" y="230" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">auth.ts</text>
+  <text x="360" y="246" fill="#82B1FF" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">OAuth 2.0</text>
+
+  <rect x="470" y="270" width="100" height="60" rx="8" fill="#2A2E3E" stroke="#26A69A" stroke-width="1.5"/>
+  <text x="520" y="300" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">api.ts</text>
+  <text x="520" y="316" fill="#80CBC4" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">14 routes</text>
+
+  <rect x="230" y="380" width="100" height="60" rx="8" fill="#2A2E3E" stroke="#7E57C2" stroke-width="1.5"/>
+  <text x="280" y="410" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">models.ts</text>
+  <text x="280" y="426" fill="#B39DDB" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">MongoDB</text>
+
+  <rect x="390" y="400" width="100" height="60" rx="8" fill="#2A2E3E" stroke="#FFA726" stroke-width="1.5"/>
+  <text x="440" y="430" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">gemini.ts</text>
+  <text x="440" y="446" fill="#FFE082" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">Streaming</text>
+
+  <rect x="115" y="550" width="520" height="80" rx="10" fill="#161822"/>
+  <text x="145" y="585" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="800">98.7%</text>
+  <text x="145" y="608" fill="#7A849E" font-family="system-ui, sans-serif" font-size="11">AST Parse Rate</text>
+  
+  <text x="300" y="585" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="800">142</text>
+  <text x="300" y="608" fill="#7A849E" font-family="system-ui, sans-serif" font-size="11">Dependencies Mapped</text>
+  
+  <text x="480" y="585" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="800">A+</text>
+  <text x="480" y="608" fill="#7A849E" font-family="system-ui, sans-serif" font-size="11">Architecture Health</text>
+
+  <rect x="690" y="130" width="420" height="530" rx="14" fill="#1E212D" stroke="#2B3041"/>
+  <text x="715" y="165" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Context-Aware Gemini AI Chat</text>
+  <text x="715" y="188" fill="#7A849E" font-family="system-ui, sans-serif" font-size="12">Live streaming codebase Q&amp;A</text>
+
+  <rect x="715" y="215" width="370" height="70" rx="10" fill="#262A3B"/>
+  <text x="735" y="240" fill="#C2CBDD" font-family="system-ui, sans-serif" font-size="12" font-weight="600">User Prompt</text>
+  <text x="735" y="263" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">How does the token refresh cycle handle concurrent requests?</text>
+
+  <rect x="715" y="300" width="370" height="175" rx="10" fill="#1B273A" stroke="#294770"/>
+  <text x="735" y="325" fill="#82B1FF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">RepoLens Gemini Agent</text>
+  <text x="735" y="350" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">In auth.ts (L42-68), an in-flight promise queue locks duplicate refresh calls. Consecutive requests await the shared resolution.</text>
+  
+  <rect x="735" y="390" width="330" height="65" rx="6" fill="#131D2D"/>
+  <text x="750" y="412" fill="#80CBC4" font-family="monospace" font-size="11">let isRefreshing = false;</text>
+  <text x="750" y="432" fill="#80CBC4" font-family="monospace" font-size="11">const subscribers: Callback[] = [];</text>
+
+  <rect x="715" y="495" width="370" height="50" rx="8" fill="#161822"/>
+  <circle cx="738" cy="520" r="5" fill="#27C93F"/>
+  <text x="755" y="524" fill="#A4ADC4" font-family="system-ui, sans-serif" font-size="12">Response stream completed • 240 tokens/sec</text>
+
+  <rect x="715" y="565" width="370" height="65" rx="8" fill="#262A3B" stroke="#383E54"/>
+  <text x="735" y="603" fill="#7A849E" font-family="system-ui, sans-serif" font-size="12">Ask questions about architecture or modules...</text>
+</svg>

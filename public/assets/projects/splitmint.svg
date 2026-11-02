@@ -1,0 +1,68 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" rx="24" fill="#121815"/>
+  <circle cx="300" cy="200" r="280" fill="#2E7D56" fill-opacity="0.2"/>
+  <circle cx="900" cy="520" r="320" fill="#D97736" fill-opacity="0.15"/>
+  
+  <rect x="60" y="50" width="1080" height="650" rx="18" fill="#18221D" stroke="#26382E" stroke-width="1.5"/>
+  <rect x="60" y="50" width="1080" height="52" rx="18" fill="#1F2E26"/>
+  <circle cx="96" cy="76" r="6" fill="#FF5F56"/>
+  <circle cx="116" cy="76" r="6" fill="#FFBD2E"/>
+  <circle cx="136" cy="76" r="6" fill="#27C93F"/>
+  <text x="600" y="82" fill="#A2BEB0" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">SplitMint • Real-Time Expense Sharing &amp; Collaborative Budgeting</text>
+  <rect x="1000" y="66" width="110" height="22" rx="6" fill="#34D399" fill-opacity="0.2"/>
+  <text x="1055" y="81" fill="#6EE7B7" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle">SOCKET.IO LIVE</text>
+
+  <rect x="90" y="130" width="320" height="530" rx="14" fill="#1D2A23" stroke="#2A3D32"/>
+  <text x="115" y="165" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Active Shared Groups</text>
+  <text x="115" y="188" fill="#7A9988" font-family="system-ui, sans-serif" font-size="12">Live settlement algorithm active</text>
+
+  <rect x="110" y="215" width="280" height="95" rx="10" fill="#23342B" stroke="#34D399" stroke-opacity="0.5"/>
+  <text x="130" y="248" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Bangalore Tech Retreat</text>
+  <text x="130" y="270" fill="#A7F3D0" font-family="system-ui, sans-serif" font-size="13">You are owed: Rs 4,850</text>
+  <text x="130" y="292" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11">5 members • Real-time socket connected</text>
+
+  <rect x="110" y="325" width="280" height="95" rx="10" fill="#23342B" stroke="#2A3D32"/>
+  <text x="130" y="358" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Kottayam Campus Flat</text>
+  <text x="130" y="380" fill="#FCA5A5" font-family="system-ui, sans-serif" font-size="13">You owe: Rs 1,200 to Rahul</text>
+  <text x="130" y="402" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11">4 members • Recurring bills scheduled</text>
+
+  <rect x="110" y="435" width="280" height="95" rx="10" fill="#23342B" stroke="#2A3D32"/>
+  <text x="130" y="468" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">College Hackathon Team</text>
+  <text x="130" y="490" fill="#E5E7EB" font-family="system-ui, sans-serif" font-size="13">Settled up completely</text>
+  <text x="130" y="512" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11">3 members • Auto-reconciled</text>
+
+  <rect x="440" y="130" width="670" height="300" rx="14" fill="#1D2A23" stroke="#2A3D32"/>
+  <text x="470" y="168" fill="#7A9988" font-family="system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="1">EXPENSE BREAKDOWN (RECHARTS DYNAMIC)</text>
+  <text x="470" y="210" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="34" font-weight="800">Rs 28,450</text>
+  <text x="630" y="206" fill="#34D399" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Within Budget Target</text>
+
+  <rect x="470" y="250" width="40" height="130" rx="6" fill="#D97736"/>
+  <text x="490" y="400" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Food</text>
+
+  <rect x="540" y="290" width="40" height="90" rx="6" fill="#34D399"/>
+  <text x="560" y="400" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Rent</text>
+
+  <rect x="610" y="230" width="40" height="150" rx="6" fill="#60A5FA"/>
+  <text x="630" y="400" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Travel</text>
+
+  <rect x="680" y="310" width="40" height="70" rx="6" fill="#F472B6"/>
+  <text x="700" y="400" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Cloud</text>
+
+  <rect x="750" y="270" width="40" height="110" rx="6" fill="#FBBF24"/>
+  <text x="770" y="400" fill="#7A9988" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Events</text>
+
+  <rect x="440" y="450" width="670" height="210" rx="14" fill="#1D2A23" stroke="#2A3D32"/>
+  <text x="470" y="485" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="700">WebSocket Real-Time Activity Feed</text>
+  
+  <rect x="470" y="505" width="610" height="40" rx="6" fill="#141E18"/>
+  <circle cx="490" cy="525" r="4" fill="#34D399"/>
+  <text x="510" y="530" fill="#D1FAE5" font-family="system-ui, sans-serif" font-size="12">Vaddi Rahul settled Rs 1,500 with Group via UPI • 2 min ago</text>
+
+  <rect x="470" y="555" width="610" height="40" rx="6" fill="#141E18"/>
+  <circle cx="490" cy="575" r="4" fill="#D97736"/>
+  <text x="510" y="580" fill="#FED7AA" font-family="system-ui, sans-serif" font-size="12">New shared expense: AWS Server hosting added • 14 min ago</text>
+
+  <rect x="470" y="605" width="610" height="40" rx="6" fill="#141E18"/>
+  <circle cx="490" cy="625" r="4" fill="#60A5FA"/>
+  <text x="510" y="630" fill="#BFDBFE" font-family="system-ui, sans-serif" font-size="12">Recurring Monthly Budget reset for November 2026 • auto-triggered</text>
+</svg>
