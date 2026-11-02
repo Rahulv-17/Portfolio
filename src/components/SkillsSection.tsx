@@ -76,7 +76,7 @@ export const SkillsSection: React.FC = () => {
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="group flex items-center justify-between p-2.5 rounded-xl hover:bg-terracotta-500/5 dark:hover:bg-terracotta-500/10 transition-colors"
+                      className="group flex items-center p-2.5 rounded-xl hover:bg-terracotta-500/5 dark:hover:bg-terracotta-500/10 transition-colors"
                     >
                       <div className="flex items-center gap-2.5">
                         <CheckCircle size={15} className="text-terracotta-500" />
@@ -84,9 +84,6 @@ export const SkillsSection: React.FC = () => {
                           {skill.name}
                         </span>
                       </div>
-                      <span className="text-[10px] font-mono text-linen-500 dark:text-linen-400">
-                        Verified
-                      </span>
                     </div>
                   ))}
                 </div>
