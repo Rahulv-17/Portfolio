@@ -72,40 +72,6 @@ npm run preview
 
 ---
 
-## 🌐 Deploying to Vercel with Custom Domain (`rahulvaddi.me`)
-
-This repository is pre-configured for instant zero-configuration deployment to [Vercel](https://vercel.com) via `vercel.json`.
-
-### 1. Push to GitHub
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/Portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-### 2. Import into Vercel
-1. Visit [vercel.com/new](https://vercel.com/new) and connect your GitHub account.
-2. Select your `Portfolio` repository.
-3. Keep default settings (Framework preset: `Vite`, Root Directory: `./`).
-4. Click **Deploy**.
-
-### 3. Connect Domain on Namecheap
-1. In your Vercel Project Dashboard, navigate to **Settings** → **Domains**.
-2. Add `rahulvaddi.me` and `www.rahulvaddi.me`.
-3. In your **Namecheap Dashboard**:
-   - Go to **Domain List** → Click **Manage** next to `rahulvaddi.me`.
-   - Go to **Advanced DNS** tab.
-   - Add the following DNS Records:
-     | Type | Host | Value | TTL |
-     | :--- | :--- | :--- | :--- |
-     | **A Record** | `@` | `76.76.21.21` | Automatic |
-     | **CNAME Record** | `www` | `cname.vercel-dns.com.` | Automatic |
-   *(Note: Existing subdomains like `repolens.rahulvaddi.me` and `splitmint.rahulvaddi.me` remain completely unaffected).*
-4. Once DNS propagates (typically 2-15 minutes), Vercel automatically provisions free SSL certificates.
-
----
-
-## 📄 License
 
 MIT © [Vaddi Rahul](https://github.com/Rahulv-17)
 
