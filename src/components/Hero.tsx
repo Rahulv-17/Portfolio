@@ -4,9 +4,9 @@ import { ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative isolate min-h-[92vh] sm:min-h-screen pt-24 pb-8 sm:pt-28 sm:pb-12 overflow-hidden flex flex-col justify-between">
+    <section className="relative isolate min-h-[92vh] sm:min-h-screen lg:min-h-[85vh] xl:min-h-[88vh] pt-24 pb-8 sm:pt-28 sm:pb-12 lg:pt-24 lg:pb-4 overflow-hidden flex flex-col justify-between">
       {/* ─── VIBRANT AMBIENT LIME AURA GLOW (Faithful to Editorial Reference) ─── */}
-      <div className="hero-aura-glow absolute top-[44%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[700px] lg:w-[1200px] h-[340px] sm:h-[600px] lg:h-[880px] blur-[30px] sm:blur-[55px] pointer-events-none z-0" />
+      <div className="hero-aura-glow absolute top-[44%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[700px] lg:w-[1020px] h-[340px] sm:h-[600px] lg:h-[720px] blur-[30px] sm:blur-[55px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full relative z-10 flex-1 flex flex-col justify-center">
         {/* ─── TOP ACCOLADE BADGE (Google Website of the Day style) ─── */}
@@ -53,18 +53,18 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* ─── CENTERSTAGE: Layered Portrait with 3D Overlap & Floating Accents ─── */}
-        <div className="relative z-20 -mt-6 sm:-mt-10 md:-mt-14 lg:-mt-20">
-          {/* Portrait Container */}
+        <div className="relative z-20 -mt-6 sm:-mt-10 md:-mt-14 lg:-mt-16 xl:-mt-18">
+          {/* Portrait Container: Compact on desktop to eliminate extra scrolling while keeping mobile intact */}
           <motion.div
             initial={{ opacity: 0.9, scale: 0.98, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-[220px] sm:max-w-[290px] md:max-w-[340px] lg:max-w-[390px] xl:max-w-[430px] mx-auto"
+            className="relative w-full max-w-[220px] sm:max-w-[290px] md:max-w-[340px] lg:max-w-[270px] xl:max-w-[300px] mx-auto"
           >
             <img
               src="/assets/me_transparent.png"
               alt="Vaddi Rahul — Full Stack Developer"
-              className="w-full h-auto object-contain mx-auto drop-shadow-2xl"
+              className="w-full h-auto max-h-[460px] lg:max-h-[350px] xl:max-h-[380px] object-contain mx-auto drop-shadow-2xl"
               style={{
                 maskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
                 WebkitMaskImage: 'linear-gradient(to bottom, black 72%, transparent 98%)',
@@ -79,7 +79,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0.85, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="hidden lg:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/95 dark:bg-obsidian-900/95 backdrop-blur-md shadow-warm border border-linen-300/80 dark:border-linen-700/60 absolute left-4 xl:left-12 top-[46%] -translate-y-1/2 z-30 hover:scale-105 transition-transform"
+            className="hidden lg:flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/95 dark:bg-obsidian-900/95 backdrop-blur-md shadow-warm border border-linen-300/80 dark:border-linen-700/60 absolute left-4 xl:left-12 top-[44%] -translate-y-1/2 z-30 hover:scale-105 transition-transform"
           >
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-500 opacity-75" />
@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0.85, x: 15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.22 }}
-            className="hidden lg:block absolute right-4 xl:right-12 top-[46%] -translate-y-1/2 max-w-[240px] xl:max-w-[280px] text-left z-30"
+            className="hidden lg:block absolute right-4 xl:right-12 top-[44%] -translate-y-1/2 max-w-[240px] xl:max-w-[280px] text-left z-30"
           >
             <p className="text-sm xl:text-base font-sans text-linen-800 dark:text-linen-200 leading-relaxed font-normal">
               passionate about creating intuitive digital experiences that connect users with value.
@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0.85, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
-            className="hidden lg:flex items-center gap-3 absolute left-4 xl:left-12 bottom-1 z-30 max-w-[320px]"
+            className="hidden lg:flex items-center gap-3 absolute left-4 xl:left-12 bottom-0 z-30 max-w-[320px]"
           >
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-neutral-900 text-white text-[10px] font-bold flex items-center justify-center border-2 border-linen-100 dark:border-obsidian-950 shadow-sm">
@@ -130,7 +130,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0.85, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.28 }}
-            className="hidden lg:flex items-center gap-3 absolute right-4 xl:right-12 bottom-1 z-30"
+            className="hidden lg:flex items-center gap-3 absolute right-4 xl:right-12 bottom-0 z-30"
           >
             <a
               href="#contact"
